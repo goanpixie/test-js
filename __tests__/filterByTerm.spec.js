@@ -1,11 +1,12 @@
 const { TestScheduler } = require('jest');
+const filterByTerm = require("../src/filterByTerm");
 
-function filterByTerm(inputArr, searchTerm) {
-  const regex = new RegExp(searchTerm, 'i');
-  return inputArr.filter(function (arrItem) {
-    return arrItem.url.match(regex);
-  });
-}
+// function filterByTerm(inputArr, searchTerm) {
+//   const regex = new RegExp(searchTerm, 'i');
+//   return inputArr.filter(function (arrItem) {
+//     return arrItem.url.match(regex);
+//   });
+// }
 
 describe('filter function', () => {
   test('test fnx for matching input', () => {
